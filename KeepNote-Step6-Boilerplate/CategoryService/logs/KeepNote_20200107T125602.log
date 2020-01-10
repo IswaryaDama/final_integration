@@ -1,0 +1,60 @@
+2020-01-07 12:56:03 [main] INFO  c.s.k.CategoryServiceApplication -
+				Starting CategoryServiceApplication on ip-172-31-83-26 with PID 5343 (/home/ubuntu/Desktop/KeepNote-Step6-Boilerplate/CategoryService/target/classes started by ubuntu in /home/ubuntu/Desktop/KeepNote-Step6-Boilerplate/CategoryService)
+2020-01-07 12:56:03 [main] INFO  c.s.k.CategoryServiceApplication -
+				No active profile set, falling back to default profiles: default
+2020-01-07 12:56:03 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -
+				Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@65fb9ffc: startup date [Tue Jan 07 12:56:03 UTC 2020]; root of context hierarchy
+2020-01-07 12:56:04 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+				Tomcat initialized with port(s): 8083 (http)
+2020-01-07 12:56:04 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+				Initializing ProtocolHandler ["http-nio-8083"]
+2020-01-07 12:56:04 [main] INFO  o.a.catalina.core.StandardService -
+				Starting service [Tomcat]
+2020-01-07 12:56:04 [main] INFO  o.a.catalina.core.StandardEngine -
+				Starting Servlet Engine: Apache Tomcat/8.5.31
+2020-01-07 12:56:04 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener -
+				The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+2020-01-07 12:56:04 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -
+				Initializing Spring embedded WebApplicationContext
+2020-01-07 12:56:04 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -
+				Root WebApplicationContext: initialization completed in 1216 ms
+2020-01-07 12:56:04 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+				Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-01-07 12:56:04 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+				Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-01-07 12:56:04 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+				Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-01-07 12:56:04 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+				Mapping filter: 'requestContextFilter' to: [/*]
+2020-01-07 12:56:04 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+				Mapping filter: 'jwtFilter' to urls: [/api/v1/user/*]
+2020-01-07 12:56:04 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -
+				Servlet dispatcherServlet mapped to [/]
+2020-01-07 12:56:04 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -
+				Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'categoryController' defined in file [/home/ubuntu/Desktop/KeepNote-Step6-Boilerplate/CategoryService/target/classes/com/stackroute/keepnote/controller/CategoryController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'categoryServiceImpl': Unsatisfied dependency expressed through field 'categoryRepo'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'categoryRepository': Cannot resolve reference to bean 'mongoTemplate' while setting bean property 'mongoOperations'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.data.mongo.MongoDataAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'spring.data.mongodb-org.springframework.boot.autoconfigure.mongo.MongoProperties': Could not bind properties to 'MongoProperties' : prefix=spring.data.mongodb, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'spring.data.mongodb.username' to java.lang.String
+2020-01-07 12:56:04 [main] INFO  o.a.catalina.core.StandardService -
+				Stopping service [Tomcat]
+2020-01-07 12:56:04 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener -
+				
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-01-07 12:56:04 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter -
+				
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'spring.data.mongodb.username' to java.lang.String:
+
+    Property: spring.data.mongodb.username
+    Value: ${MONGO_USERNAME}
+    Origin: class path resource [application.yml]:5:17
+    Reason: Could not resolve placeholder 'MONGO_USERNAME' in value "${MONGO_USERNAME}"
+
+Action:
+
+Update your application's configuration
+

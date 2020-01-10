@@ -1,0 +1,13 @@
+spring:
+  data:
+    mongodb:
+#      authentication-database: dbAdmin
+#      username: ${MONGO_USERNAME}
+#      password: ${MONGO_PASSWORD}
+      database: test
+      port: 27017
+      host: localhost
+  application:
+    name: note-service
+server:
+  port: 8082

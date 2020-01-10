@@ -1,0 +1,430 @@
+2020-01-07 09:04:46 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper -
+				Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.stackroute.keepnote.test.repository.ReminderRepositoryTest], using SpringBootContextLoader
+2020-01-07 09:04:46 [main] INFO  o.s.t.c.s.AbstractContextLoader -
+				Could not detect default resource locations for test class [com.stackroute.keepnote.test.repository.ReminderRepositoryTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-01-07 09:04:46 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils -
+				Could not detect default configuration classes for test class [com.stackroute.keepnote.test.repository.ReminderRepositoryTest]: ReminderRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-01-07 09:04:46 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper -
+				Found @SpringBootConfiguration com.stackroute.keepnote.ReminderServiceApplication for test class com.stackroute.keepnote.test.repository.ReminderRepositoryTest
+2020-01-07 09:04:46 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper -
+				Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2020-01-07 09:04:46 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper -
+				Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1b7cc17c, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@59662a0b, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@77fbd92c, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@67c27493, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1a482e36, org.springframework.test.context.transaction.TransactionalTestExecutionListener@72967906, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5b8dfcc1, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2f9f7dcf, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@747ddf94, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@35e2d654, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1bd4fdd, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@55183b20]
+2020-01-07 09:04:47 [main] INFO  c.s.k.t.r.ReminderRepositoryTest -
+				Starting ReminderRepositoryTest on ip-172-31-83-26 with PID 4945 (started by ubuntu in /home/ubuntu/Desktop/KeepNote-Step6-Boilerplate/ReminderService)
+2020-01-07 09:04:47 [main] INFO  c.s.k.t.r.ReminderRepositoryTest -
+				No active profile set, falling back to default profiles: default
+2020-01-07 09:04:47 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext -
+				Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@51bd8b5c: startup date [Tue Jan 07 09:04:47 UTC 2020]; root of context hierarchy
+2020-01-07 09:04:48 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				note: noprealloc may hurt performance in many applications
+2020-01-07 09:04:48 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-07T09:04:48.370+0000 I CONTROL  [initandlisten] MongoDB starting : pid=4978 port=38353 dbpath=/tmp/embedmongo-db-9946b7c8-a1bf-4468-bdc1-d979c563e1de 64-bit host=ip-172-31-83-26
+2020-01-07 09:04:48 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-07T09:04:48.370+0000 I CONTROL  [initandlisten] db version v3.2.2
+2020-01-07 09:04:48 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-07T09:04:48.370+0000 I CONTROL  [initandlisten] git version: 6e71d0d568e134c029203593b00a0103e7cdf30b
+2020-01-07 09:04:48 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-07T09:04:48.370+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+2020-01-07 09:04:48 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-07T09:04:48.370+0000 I CONTROL  [initandlisten] modules: none
+2020-01-07 09:04:48 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-07T09:04:48.370+0000 I CONTROL  [initandlisten] build environment:
+2020-01-07 09:04:48 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-07T09:04:48.370+0000 I CONTROL  [initandlisten]     distarch: x86_64
+2020-01-07 09:04:48 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-07T09:04:48.370+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+2020-01-07 09:04:48 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-07T09:04:48.370+0000 I CONTROL  [initandlisten] options: { net: { bindIp: "127.0.0.1", http: { enabled: false }, port: 38353 }, security: { authorization: "disabled" }, storage: { dbPath: "/tmp/embedmongo-db-9946b7c8-a1bf-4468-bdc1-d979c563e1de", journal: { enabled: false }, mmapv1: { preallocDataFiles: false, smallFiles: true }, syncPeriodSecs: 0.0 } }
+2020-01-07 09:04:48 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-07T09:04:48.399+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=4G,session_max=20000,eviction=(threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=0,log_size=2GB),statistics_log=(wait=0),,log=(enabled=false),
+2020-01-07 09:04:48 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-07T09:04:48.449+0000 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
+2020-01-07 09:04:48 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-07T09:04:48.449+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/tmp/embedmongo-db-9946b7c8-a1bf-4468-bdc1-d979c563e1de/diagnostic.data'
+2020-01-07 09:04:48 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-07T09:04:48.450+0000 I NETWORK  [HostnameCanonicalizationWorker] Starting hostname canonicalization worker
+2020-01-07 09:04:48 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-07T09:04:48.464+0000 I NETWORK  [initandlisten] waiting for connections on port 38353
+2020-01-07 09:04:48 [main] INFO  d.f.embed.process.runtime.Executable -
+				start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@544630b7
+2020-01-07 09:04:48 [main] INFO  org.mongodb.driver.cluster -
+				Cluster created with settings {hosts=[localhost:38353], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-01-07 09:04:48 [main] INFO  org.mongodb.driver.cluster -
+				Adding discovered server localhost:38353 to client view of cluster
+2020-01-07 09:04:48 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-07T09:04:48.752+0000 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:41508 #1 (1 connection now open)
+2020-01-07 09:04:48 [cluster-ClusterId{value='5e1449b00ca15e1351a49aaa', description='null'}-localhost:38353] INFO  org.mongodb.driver.connection -
+				Opened connection [connectionId{localValue:1, serverValue:1}] to localhost:38353
+2020-01-07 09:04:48 [cluster-ClusterId{value='5e1449b00ca15e1351a49aaa', description='null'}-localhost:38353] INFO  org.mongodb.driver.cluster -
+				Monitor thread successfully connected to server with description ServerDescription{address=localhost:38353, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 2]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=null, roundTripTimeNanos=2452426}
+2020-01-07 09:04:48 [cluster-ClusterId{value='5e1449b00ca15e1351a49aaa', description='null'}-localhost:38353] INFO  org.mongodb.driver.cluster -
+				Discovered cluster type of STANDALONE
+2020-01-07 09:04:49 [main] INFO  c.s.k.t.r.ReminderRepositoryTest -
+				Started ReminderRepositoryTest in 2.502 seconds (JVM running for 3.613)
+2020-01-07 09:04:49 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-07T09:04:49.523+0000 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:41510 #2 (2 connections now open)
+2020-01-07 09:04:49 [main] INFO  org.mongodb.driver.connection -
+				Opened connection [connectionId{localValue:2, serverValue:2}] to localhost:38353
+2020-01-07 09:04:50 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper -
+				Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.stackroute.keepnote.test.log.LoggerTest], using SpringBootContextLoader
+2020-01-07 09:04:50 [main] INFO  o.s.t.c.s.AbstractContextLoader -
+				Could not detect default resource locations for test class [com.stackroute.keepnote.test.log.LoggerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-01-07 09:04:50 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils -
+				Could not detect default configuration classes for test class [com.stackroute.keepnote.test.log.LoggerTest]: LoggerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-01-07 09:04:50 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper -
+				Found @SpringBootConfiguration com.stackroute.keepnote.ReminderServiceApplication for test class com.stackroute.keepnote.test.log.LoggerTest
+2020-01-07 09:04:50 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper -
+				Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2020-01-07 09:04:50 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper -
+				Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6a818392, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@489091bd, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@512d6e60, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1de9b505, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7b122839, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3743539f, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@d277579, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5db6b845, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@378f002a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1afd72ef, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2cc75074, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@445bb139]
+2020-01-07 09:04:50 [main] INFO  c.s.keepnote.test.log.LoggerTest -
+				Starting LoggerTest on ip-172-31-83-26 with PID 4945 (started by ubuntu in /home/ubuntu/Desktop/KeepNote-Step6-Boilerplate/ReminderService)
+2020-01-07 09:04:50 [main] INFO  c.s.keepnote.test.log.LoggerTest -
+				No active profile set, falling back to default profiles: default
+2020-01-07 09:04:50 [main] INFO  o.s.w.c.s.GenericWebApplicationContext -
+				Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7e446d92: startup date [Tue Jan 07 09:04:50 UTC 2020]; root of context hierarchy
+2020-01-07 09:04:51 [Thread-8] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				note: noprealloc may hurt performance in many applications
+2020-01-07 09:04:51 [Thread-8] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-07T09:04:51.060+0000 I CONTROL  [initandlisten] MongoDB starting : pid=5001 port=36441 dbpath=/tmp/embedmongo-db-f5712286-7112-407f-88a6-9448f335a977 64-bit host=ip-172-31-83-26
+2020-01-07 09:04:51 [Thread-8] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-07T09:04:51.060+0000 I CONTROL  [initandlisten] db version v3.2.2
+2020-01-07 09:04:51 [Thread-8] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-07T09:04:51.060+0000 I CONTROL  [initandlisten] git version: 6e71d0d568e134c029203593b00a0103e7cdf30b
+2020-01-07 09:04:51 [Thread-8] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-07T09:04:51.060+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+2020-01-07 09:04:51 [Thread-8] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-07T09:04:51.061+0000 I CONTROL  [initandlisten] modules: none
+2020-01-07 09:04:51 [Thread-8] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-07T09:04:51.061+0000 I CONTROL  [initandlisten] build environment:
+2020-01-07 09:04:51 [Thread-8] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-07T09:04:51.061+0000 I CONTROL  [initandlisten]     distarch: x86_64
+2020-01-07 09:04:51 [Thread-8] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-07T09:04:51.061+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+2020-01-07 09:04:51 [Thread-8] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-07T09:04:51.061+0000 I CONTROL  [initandlisten] options: { net: { bindIp: "127.0.0.1", http: { enabled: false }, port: 36441 }, security: { authorization: "disabled" }, storage: { dbPath: "/tmp/embedmongo-db-f5712286-7112-407f-88a6-9448f335a977", journal: { enabled: false }, mmapv1: { preallocDataFiles: false, smallFiles: true }, syncPeriodSecs: 0.0 } }
+2020-01-07 09:04:51 [Thread-8] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-07T09:04:51.087+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=4G,session_max=20000,eviction=(threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=0,log_size=2GB),statistics_log=(wait=0),,log=(enabled=false),
+2020-01-07 09:04:51 [Thread-8] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-07T09:04:51.136+0000 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
+2020-01-07 09:04:51 [Thread-8] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-07T09:04:51.137+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/tmp/embedmongo-db-f5712286-7112-407f-88a6-9448f335a977/diagnostic.data'
+2020-01-07 09:04:51 [Thread-8] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-07T09:04:51.138+0000 I NETWORK  [HostnameCanonicalizationWorker] Starting hostname canonicalization worker
+2020-01-07 09:04:51 [Thread-8] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-07T09:04:51.152+0000 I NETWORK  [initandlisten] waiting for connections on port 36441
+2020-01-07 09:04:51 [main] INFO  d.f.embed.process.runtime.Executable -
+				start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@20ead579
+2020-01-07 09:04:51 [main] INFO  org.mongodb.driver.cluster -
+				Cluster created with settings {hosts=[localhost:36441], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-01-07 09:04:51 [main] INFO  org.mongodb.driver.cluster -
+				Adding discovered server localhost:36441 to client view of cluster
+2020-01-07 09:04:51 [Thread-8] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-07T09:04:51.166+0000 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:38104 #1 (1 connection now open)
+2020-01-07 09:04:51 [cluster-ClusterId{value='5e1449b30ca15e1351a49aab', description='null'}-localhost:36441] INFO  org.mongodb.driver.connection -
+				Opened connection [connectionId{localValue:3, serverValue:1}] to localhost:36441
+2020-01-07 09:04:51 [cluster-ClusterId{value='5e1449b30ca15e1351a49aab', description='null'}-localhost:36441] INFO  org.mongodb.driver.cluster -
+				Monitor thread successfully connected to server with description ServerDescription{address=localhost:36441, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 2]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=null, roundTripTimeNanos=416106}
+2020-01-07 09:04:51 [cluster-ClusterId{value='5e1449b30ca15e1351a49aab', description='null'}-localhost:36441] INFO  org.mongodb.driver.cluster -
+				Discovered cluster type of STANDALONE
+2020-01-07 09:04:51 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -
+				Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-01-07 09:04:51 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+				Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@7e446d92: startup date [Tue Jan 07 09:04:50 UTC 2020]; root of context hierarchy
+2020-01-07 09:04:51 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/reminder],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.createReminder(com.stackroute.keepnote.model.Reminder)
+2020-01-07 09:04:51 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/reminder/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.deleteReminder(java.lang.String,javax.servlet.http.HttpSession)
+2020-01-07 09:04:51 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/reminder/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.getReminderById(java.lang.String)
+2020-01-07 09:04:51 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/reminder/{id}],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.updateReminder(com.stackroute.keepnote.model.Reminder,java.lang.String)
+2020-01-07 09:04:51 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/reminder],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.getAllRemindersById()
+2020-01-07 09:04:51 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-01-07 09:04:51 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-01-07 09:04:51 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -
+				Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-01-07 09:04:51 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -
+				Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-01-07 09:04:52 [main] INFO  c.s.keepnote.test.log.LoggerTest -
+				Started LoggerTest in 1.995 seconds (JVM running for 6.382)
+2020-01-07 09:04:52 [main] INFO  o.s.b.t.a.w.s.WebMvcTestContextBootstrapper -
+				Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.stackroute.keepnote.test.controller.ReminderControllerTest], using SpringBootContextLoader
+2020-01-07 09:04:52 [main] INFO  o.s.t.c.s.AbstractContextLoader -
+				Could not detect default resource locations for test class [com.stackroute.keepnote.test.controller.ReminderControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-01-07 09:04:52 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils -
+				Could not detect default configuration classes for test class [com.stackroute.keepnote.test.controller.ReminderControllerTest]: ReminderControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-01-07 09:04:52 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper -
+				Found @SpringBootConfiguration com.stackroute.keepnote.ReminderServiceApplication for test class com.stackroute.keepnote.test.controller.ReminderControllerTest
+2020-01-07 09:04:52 [main] INFO  o.s.b.t.a.w.s.WebMvcTestContextBootstrapper -
+				Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2020-01-07 09:04:52 [main] INFO  o.s.b.t.a.w.s.WebMvcTestContextBootstrapper -
+				Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1a7cb3a4, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1c297897, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@33e0c716, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1d6a8386, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6274f21c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@35cec305, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@237add, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@491cafec, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@cbd40c1, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4fa86cb8, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@54c60202, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7889b4b9]
+2020-01-07 09:04:52 [main] INFO  c.s.k.t.c.ReminderControllerTest -
+				Starting ReminderControllerTest on ip-172-31-83-26 with PID 4945 (started by ubuntu in /home/ubuntu/Desktop/KeepNote-Step6-Boilerplate/ReminderService)
+2020-01-07 09:04:52 [main] INFO  c.s.k.t.c.ReminderControllerTest -
+				No active profile set, falling back to default profiles: default
+2020-01-07 09:04:52 [main] INFO  o.s.w.c.s.GenericWebApplicationContext -
+				Refreshing org.springframework.web.context.support.GenericWebApplicationContext@71a4f441: startup date [Tue Jan 07 09:04:52 UTC 2020]; root of context hierarchy
+2020-01-07 09:04:52 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -
+				Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-01-07 09:04:52 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+				Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@71a4f441: startup date [Tue Jan 07 09:04:52 UTC 2020]; root of context hierarchy
+2020-01-07 09:04:52 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/reminder],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.createReminder(com.stackroute.keepnote.model.Reminder)
+2020-01-07 09:04:52 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/reminder/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.deleteReminder(java.lang.String,javax.servlet.http.HttpSession)
+2020-01-07 09:04:52 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/reminder/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.getReminderById(java.lang.String)
+2020-01-07 09:04:52 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/reminder/{id}],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.updateReminder(com.stackroute.keepnote.model.Reminder,java.lang.String)
+2020-01-07 09:04:52 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/reminder],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.getAllRemindersById()
+2020-01-07 09:04:52 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-01-07 09:04:52 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-01-07 09:04:52 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -
+				Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-01-07 09:04:52 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -
+				Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-01-07 09:04:52 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext -
+				Initializing Spring FrameworkServlet ''
+2020-01-07 09:04:52 [main] INFO  o.s.t.w.s.TestDispatcherServlet -
+				FrameworkServlet '': initialization started
+2020-01-07 09:04:52 [main] INFO  o.s.t.w.s.TestDispatcherServlet -
+				FrameworkServlet '': initialization completed in 13 ms
+2020-01-07 09:04:52 [main] INFO  c.s.k.t.c.ReminderControllerTest -
+				Started ReminderControllerTest in 0.502 seconds (JVM running for 6.923)
+2020-01-07 09:04:52 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/reminder],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.createReminder(com.stackroute.keepnote.model.Reminder)
+2020-01-07 09:04:52 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/reminder/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.deleteReminder(java.lang.String,javax.servlet.http.HttpSession)
+2020-01-07 09:04:52 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/reminder/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.getReminderById(java.lang.String)
+2020-01-07 09:04:52 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/reminder/{id}],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.updateReminder(com.stackroute.keepnote.model.Reminder,java.lang.String)
+2020-01-07 09:04:52 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/reminder],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.getAllRemindersById()
+2020-01-07 09:04:52 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+				Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@1332dec4
+2020-01-07 09:04:52 [main] INFO  o.s.mock.web.MockServletContext -
+				Initializing Spring FrameworkServlet ''
+2020-01-07 09:04:52 [main] INFO  o.s.t.w.s.TestDispatcherServlet -
+				FrameworkServlet '': initialization started
+2020-01-07 09:04:52 [main] INFO  o.s.t.w.s.TestDispatcherServlet -
+				FrameworkServlet '': initialization completed in 1 ms
+2020-01-07 09:04:52 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/reminder],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.createReminder(com.stackroute.keepnote.model.Reminder)
+2020-01-07 09:04:52 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/reminder/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.deleteReminder(java.lang.String,javax.servlet.http.HttpSession)
+2020-01-07 09:04:52 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/reminder/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.getReminderById(java.lang.String)
+2020-01-07 09:04:52 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/reminder/{id}],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.updateReminder(com.stackroute.keepnote.model.Reminder,java.lang.String)
+2020-01-07 09:04:52 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/reminder],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.getAllRemindersById()
+2020-01-07 09:04:52 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+				Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@7ea71fc2
+2020-01-07 09:04:52 [main] INFO  o.s.mock.web.MockServletContext -
+				Initializing Spring FrameworkServlet ''
+2020-01-07 09:04:52 [main] INFO  o.s.t.w.s.TestDispatcherServlet -
+				FrameworkServlet '': initialization started
+2020-01-07 09:04:52 [main] INFO  o.s.t.w.s.TestDispatcherServlet -
+				FrameworkServlet '': initialization completed in 0 ms
+2020-01-07 09:04:52 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/reminder],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.createReminder(com.stackroute.keepnote.model.Reminder)
+2020-01-07 09:04:52 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/reminder/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.deleteReminder(java.lang.String,javax.servlet.http.HttpSession)
+2020-01-07 09:04:52 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/reminder/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.getReminderById(java.lang.String)
+2020-01-07 09:04:52 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/reminder/{id}],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.updateReminder(com.stackroute.keepnote.model.Reminder,java.lang.String)
+2020-01-07 09:04:52 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/reminder],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.getAllRemindersById()
+2020-01-07 09:04:52 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+				Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@7faa0680
+2020-01-07 09:04:52 [main] INFO  o.s.mock.web.MockServletContext -
+				Initializing Spring FrameworkServlet ''
+2020-01-07 09:04:52 [main] INFO  o.s.t.w.s.TestDispatcherServlet -
+				FrameworkServlet '': initialization started
+2020-01-07 09:04:52 [main] INFO  o.s.t.w.s.TestDispatcherServlet -
+				FrameworkServlet '': initialization completed in 0 ms
+2020-01-07 09:04:52 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/reminder],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.createReminder(com.stackroute.keepnote.model.Reminder)
+2020-01-07 09:04:52 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/reminder/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.deleteReminder(java.lang.String,javax.servlet.http.HttpSession)
+2020-01-07 09:04:52 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/reminder/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.getReminderById(java.lang.String)
+2020-01-07 09:04:52 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/reminder/{id}],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.updateReminder(com.stackroute.keepnote.model.Reminder,java.lang.String)
+2020-01-07 09:04:52 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/reminder],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.getAllRemindersById()
+2020-01-07 09:04:52 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+				Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@31881aa2
+2020-01-07 09:04:52 [main] INFO  o.s.mock.web.MockServletContext -
+				Initializing Spring FrameworkServlet ''
+2020-01-07 09:04:52 [main] INFO  o.s.t.w.s.TestDispatcherServlet -
+				FrameworkServlet '': initialization started
+2020-01-07 09:04:52 [main] INFO  o.s.t.w.s.TestDispatcherServlet -
+				FrameworkServlet '': initialization completed in 1 ms
+2020-01-07 09:04:52 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/reminder],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.createReminder(com.stackroute.keepnote.model.Reminder)
+2020-01-07 09:04:52 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/reminder/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.deleteReminder(java.lang.String,javax.servlet.http.HttpSession)
+2020-01-07 09:04:52 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/reminder/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.getReminderById(java.lang.String)
+2020-01-07 09:04:52 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/reminder/{id}],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.updateReminder(com.stackroute.keepnote.model.Reminder,java.lang.String)
+2020-01-07 09:04:52 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/reminder],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.getAllRemindersById()
+2020-01-07 09:04:52 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+				Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@70f148dc
+2020-01-07 09:04:52 [main] INFO  o.s.mock.web.MockServletContext -
+				Initializing Spring FrameworkServlet ''
+2020-01-07 09:04:52 [main] INFO  o.s.t.w.s.TestDispatcherServlet -
+				FrameworkServlet '': initialization started
+2020-01-07 09:04:52 [main] INFO  o.s.t.w.s.TestDispatcherServlet -
+				FrameworkServlet '': initialization completed in 0 ms
+2020-01-07 09:04:53 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/reminder],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.createReminder(com.stackroute.keepnote.model.Reminder)
+2020-01-07 09:04:53 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/reminder/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.deleteReminder(java.lang.String,javax.servlet.http.HttpSession)
+2020-01-07 09:04:53 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/reminder/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.getReminderById(java.lang.String)
+2020-01-07 09:04:53 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/reminder/{id}],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.updateReminder(com.stackroute.keepnote.model.Reminder,java.lang.String)
+2020-01-07 09:04:53 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/reminder],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.getAllRemindersById()
+2020-01-07 09:04:53 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+				Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@59328218
+2020-01-07 09:04:53 [main] INFO  o.s.mock.web.MockServletContext -
+				Initializing Spring FrameworkServlet ''
+2020-01-07 09:04:53 [main] INFO  o.s.t.w.s.TestDispatcherServlet -
+				FrameworkServlet '': initialization started
+2020-01-07 09:04:53 [main] INFO  o.s.t.w.s.TestDispatcherServlet -
+				FrameworkServlet '': initialization completed in 0 ms
+2020-01-07 09:04:53 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/reminder],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.createReminder(com.stackroute.keepnote.model.Reminder)
+2020-01-07 09:04:53 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/reminder/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.deleteReminder(java.lang.String,javax.servlet.http.HttpSession)
+2020-01-07 09:04:53 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/reminder/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.getReminderById(java.lang.String)
+2020-01-07 09:04:53 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/reminder/{id}],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.updateReminder(com.stackroute.keepnote.model.Reminder,java.lang.String)
+2020-01-07 09:04:53 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/reminder],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.getAllRemindersById()
+2020-01-07 09:04:53 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+				Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@4b4814d0
+2020-01-07 09:04:53 [main] INFO  o.s.mock.web.MockServletContext -
+				Initializing Spring FrameworkServlet ''
+2020-01-07 09:04:53 [main] INFO  o.s.t.w.s.TestDispatcherServlet -
+				FrameworkServlet '': initialization started
+2020-01-07 09:04:53 [main] INFO  o.s.t.w.s.TestDispatcherServlet -
+				FrameworkServlet '': initialization completed in 0 ms
+2020-01-07 09:04:53 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/reminder],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.createReminder(com.stackroute.keepnote.model.Reminder)
+2020-01-07 09:04:53 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/reminder/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.deleteReminder(java.lang.String,javax.servlet.http.HttpSession)
+2020-01-07 09:04:53 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/reminder/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.getReminderById(java.lang.String)
+2020-01-07 09:04:53 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/reminder/{id}],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.updateReminder(com.stackroute.keepnote.model.Reminder,java.lang.String)
+2020-01-07 09:04:53 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/reminder],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.getAllRemindersById()
+2020-01-07 09:04:53 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+				Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@7ac48f05
+2020-01-07 09:04:53 [main] INFO  o.s.mock.web.MockServletContext -
+				Initializing Spring FrameworkServlet ''
+2020-01-07 09:04:53 [main] INFO  o.s.t.w.s.TestDispatcherServlet -
+				FrameworkServlet '': initialization started
+2020-01-07 09:04:53 [main] INFO  o.s.t.w.s.TestDispatcherServlet -
+				FrameworkServlet '': initialization completed in 0 ms
+2020-01-07 09:04:53 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/reminder],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.createReminder(com.stackroute.keepnote.model.Reminder)
+2020-01-07 09:04:53 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/reminder/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.deleteReminder(java.lang.String,javax.servlet.http.HttpSession)
+2020-01-07 09:04:53 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/reminder/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.getReminderById(java.lang.String)
+2020-01-07 09:04:53 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/reminder/{id}],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.updateReminder(com.stackroute.keepnote.model.Reminder,java.lang.String)
+2020-01-07 09:04:53 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/reminder],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.getAllRemindersById()
+2020-01-07 09:04:53 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+				Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@4e17442f
+2020-01-07 09:04:53 [main] INFO  o.s.mock.web.MockServletContext -
+				Initializing Spring FrameworkServlet ''
+2020-01-07 09:04:53 [main] INFO  o.s.t.w.s.TestDispatcherServlet -
+				FrameworkServlet '': initialization started
+2020-01-07 09:04:53 [main] INFO  o.s.t.w.s.TestDispatcherServlet -
+				FrameworkServlet '': initialization completed in 0 ms
+2020-01-07 09:04:53 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-07T09:04:53.207+0000 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:41514 #3 (3 connections now open)
+2020-01-07 09:04:53 [Thread-12] INFO  o.s.w.c.s.GenericWebApplicationContext -
+				Closing org.springframework.web.context.support.GenericWebApplicationContext@71a4f441: startup date [Tue Jan 07 09:04:52 UTC 2020]; root of context hierarchy
+2020-01-07 09:04:53 [Thread-10] INFO  o.s.w.c.s.GenericWebApplicationContext -
+				Closing org.springframework.web.context.support.GenericWebApplicationContext@7e446d92: startup date [Tue Jan 07 09:04:50 UTC 2020]; root of context hierarchy
+2020-01-07 09:04:53 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-07T09:04:53.219+0000 I COMMAND  [conn3] terminating, shutdown command received
+2020-01-07 09:04:53 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-07T09:04:53.219+0000 I FTDC     [conn3] Shutting down full-time diagnostic data capture
+2020-01-07 09:04:53 [Thread-8] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-07T09:04:53.220+0000 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:38108 #2 (2 connections now open)
+2020-01-07 09:04:53 [Thread-8] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-07T09:04:53.224+0000 I NETWORK  [conn1] end connection 127.0.0.1:38104 (1 connection now open)
+2020-01-07 09:04:53 [Thread-8] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-07T09:04:53.226+0000 I COMMAND  [conn2] terminating, shutdown command received
+2020-01-07 09:04:53 [Thread-8] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-07T09:04:53.227+0000 I FTDC     [conn2] Shutting down full-time diagnostic data capture
+2020-01-07 09:04:53 [Thread-5] INFO  o.s.c.a.AnnotationConfigApplicationContext -
+				Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@51bd8b5c: startup date [Tue Jan 07 09:04:47 UTC 2020]; root of context hierarchy
+2020-01-07 09:04:53 [Thread-5] INFO  org.mongodb.driver.connection -
+				Closed connection [connectionId{localValue:2, serverValue:2}] to localhost:38353 because the pool has been closed.
+2020-01-07 09:04:53 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-07T09:04:53.230+0000 I NETWORK  [conn2] end connection 127.0.0.1:41510 (2 connections now open)
+2020-01-07 09:04:53 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-07T09:04:53.230+0000 I NETWORK  [conn1] end connection 127.0.0.1:41508 (1 connection now open)
+2020-01-07 09:04:53 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-07T09:04:53.231+0000 I CONTROL  [conn3] now exiting
+2020-01-07 09:04:53 [Thread-8] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-07T09:04:53.232+0000 I CONTROL  [conn2] now exiting
+2020-01-07 09:04:53 [Thread-8] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-07T09:04:53.233+0000 I NETWORK  [conn2] shutdown: going to close listening sockets...
+2020-01-07 09:04:53 [Thread-8] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-07T09:04:53.233+0000 I NETWORK  [conn2] closing listening socket: 5
+2020-01-07 09:04:53 [Thread-8] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-07T09:04:53.233+0000 I NETWORK  [conn2] closing listening socket: 6
+2020-01-07 09:04:53 [Thread-8] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-07T09:04:53.233+0000 I NETWORK  [conn2] removing socket file: /tmp/mongodb-36441.sock
+2020-01-07 09:04:53 [Thread-8] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-07T09:04:53.234+0000 I NETWORK  [conn2] shutdown: going to flush diaglog...
+2020-01-07 09:04:53 [Thread-8] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-07T09:04:53.234+0000 I NETWORK  [conn2] shutdown: going to close sockets...
+2020-01-07 09:04:53 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-07T09:04:53.235+0000 I NETWORK  [conn3] shutdown: going to close listening sockets...
+2020-01-07 09:04:53 [Thread-8] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-07T09:04:53.235+0000 I STORAGE  [conn2] WiredTigerKVEngine shutting down
+2020-01-07 09:04:53 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-07T09:04:53.235+0000 I NETWORK  [conn3] closing listening socket: 5
+2020-01-07 09:04:53 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-07T09:04:53.236+0000 I NETWORK  [conn3] closing listening socket: 6
+2020-01-07 09:04:53 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-07T09:04:53.236+0000 I NETWORK  [conn3] removing socket file: /tmp/mongodb-38353.sock
+2020-01-07 09:04:53 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-07T09:04:53.236+0000 I NETWORK  [conn3] shutdown: going to flush diaglog...
+2020-01-07 09:04:53 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-07T09:04:53.236+0000 I NETWORK  [conn3] shutdown: going to close sockets...
+2020-01-07 09:04:53 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-07T09:04:53.236+0000 I STORAGE  [conn3] WiredTigerKVEngine shutting down
+2020-01-07 09:04:53 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-07T09:04:53.252+0000 I STORAGE  [conn3] shutdown: removing fs lock...
+2020-01-07 09:04:53 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-07T09:04:53.252+0000 I CONTROL  [conn3] dbexit:  rc: 0
+2020-01-07 09:04:53 [Thread-8] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-07T09:04:53.253+0000 I STORAGE  [conn2] shutdown: removing fs lock...
+2020-01-07 09:04:53 [Thread-8] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-07T09:04:53.253+0000 I CONTROL  [conn2] dbexit:  rc: 0
