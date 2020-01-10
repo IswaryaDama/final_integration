@@ -5,8 +5,7 @@ variables:
   MYSQL_HOST: localhost
   MYSQL_DATABASE: keep_note6
   MYSQL_CI_URL: jdbc:mysql://${MYSQL_HOST}/${MYSQL_DATABASE}
-  MYSQL_USER: root
-  MYSQL_PASSWORD: root
+  MYSQL_ROOT_PASSWORD: root
 
 stages:
  
